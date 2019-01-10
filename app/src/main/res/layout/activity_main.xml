@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/timerValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="80sp"
+        android:textColor="#ffffff"
+        android:text="@string/timerVal"
+        android:layout_marginTop="80sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+        <!--android:layout_marginBottom="37dp"-->
+
+        <!--android:layout_above="@+id/pauseButton"-->
+
+
+    <Button
+        android:id="@+id/startButton"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timerValue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:text="@string/startButtonLabel"
+        android:textColor="#ffffff"
+        android:background="@drawable/enabledisable"/>
+        />
+
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_marginEnd="22dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_toStartOf="@+id/skip" />-->
+
+    <Button
+        android:id="@+id/pauseButton"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/startButton"
+        android:layout_below="@+id/startButton"
+        android:layout_marginTop="32dp"
+        android:text="@string/pauseButtonLabel"
+        android:textColor="#ffffff"
+        android:background="@drawable/enabledisable"/>
+        android:background="@drawable/ripple_effect"/>
+        <!--android:layout_marginLeft="25dp"-->
+        <!--android:layout_below="@+id/startButton"-->
+        <!--android:layout_alignEnd="@+id/skip"-->
+        <!--android:layout_marginTop="16dp" />-->
+
+    <Button
+        android:id="@+id/skip"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pauseButton"
+        android:layout_below="@+id/pauseButton"
+        android:layout_marginTop="30sp"
+        android:color="#90ee02"
+        android:background="@drawable/enabledisable"
+        android:text="skip"
+        android:textColor="#ffffff"
+        />
+
+    <TextView
+        android:id="@+id/stageNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:text="Sprint #1"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+    <!--android:layout_marginTop="88dp"-->
+        <!--android:layout_below="@+id/startButton"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <Button
+        android:id="@+id/button_main"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30sp"
+        android:onClick="launchSecondActivity"
+        android:text="Settings"
+        android:textColor="#ffffff"
+        android:background="@drawable/enabledisable"/>
+        <!--android:background="@drawable/roundshapebtn"-->
+
+        <!--android:layout_alignParentEnd="true"-->
+
+
+</RelativeLayout>

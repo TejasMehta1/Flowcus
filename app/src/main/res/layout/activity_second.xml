@@ -1,0 +1,290 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent">
+
+    <!--android:layout_marginBottom="37dp"-->
+
+    <!--android:layout_above="@+id/pauseButton"-->
+
+
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_marginEnd="22dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_toStartOf="@+id/skip" />-->
+
+    <!--android:layout_marginLeft="25dp"-->
+    <!--android:layout_below="@+id/startButton"-->
+    <!--android:layout_alignEnd="@+id/skip"-->
+    <!--android:layout_marginTop="16dp" />-->
+
+    <TextView
+        android:id="@+id/stageNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sprint #1"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/button_main"
+        android:layout_marginTop="100sp" />
+    <!--android:layout_marginTop="88dp"-->
+    <!--android:layout_below="@+id/startButton"-->
+    <!--android:layout_centerHorizontal="true" />-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Break #1"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/stageNumber"
+        android:layout_alignStart="@+id/stageNumber" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sprint #2"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/stageNumber" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Break #2"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/button_main"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30sp"
+        android:onClick="saveData"
+        android:background="@drawable/ripple_effect"
+        />
+
+
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button_main"
+        android:layout_marginTop="50sp" />
+    <TextView
+        android:id="@+id/sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sec"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/colon"
+        android:layout_marginTop="50sp" />
+
+    <!--android:layout_alignParentEnd="true"-->
+
+    <EditText
+        android:id="@+id/min1"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90sp"
+        android:layout_toEndOf="@+id/button_main"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="20"
+        android:textColorHint="#9E9E9E"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/colon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" : "
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/min1"
+        android:layout_marginTop="100sp" />
+
+    <EditText
+        android:id="@+id/sec1"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90sp"
+        android:layout_toEndOf="@+id/colon"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="00"
+        android:textColorHint="#9E9E9E"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/min2"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/min1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0sp"
+        android:layout_toEndOf="@+id/button_main"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="05"
+        android:textColorHint="#9E9E9E"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/colon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" : "
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_toEndOf="@+id/min2"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/min1" />
+
+    <EditText
+        android:id="@+id/sec2"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/min1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0sp"
+        android:layout_toEndOf="@+id/colon"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="00"
+        android:textColorHint="#9E9E9E"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/min3"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/min2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0sp"
+        android:layout_toEndOf="@+id/button_main"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="20"
+        android:textColorHint="#9E9E9E"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/colon3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" : "
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_toEndOf="@+id/min3"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/min2" />
+
+    <EditText
+        android:id="@+id/sec3"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/min2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0sp"
+        android:layout_toEndOf="@+id/colon3"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="00"
+        android:textColorHint="#9E9E9E"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/min4"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/min3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0sp"
+        android:layout_toEndOf="@+id/button_main"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="10"
+        android:textColorHint="#9E9E9E"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/colon4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" : "
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_toEndOf="@+id/min4"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/min3" />
+
+    <EditText
+        android:id="@+id/sec4"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/min3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0sp"
+        android:layout_toEndOf="@+id/colon4"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="00"
+        android:textColorHint="#9E9E9E"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>
